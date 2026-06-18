@@ -42,12 +42,10 @@
 	justify-content: center;
 }
 
-/* Platform hero — image pinned to bottom */
+/* Platform hero — image pinned to bottom of the row */
 .ab-hero .ab-hero-visual {
-	position: relative;
-	bottom: 0;
-	margin-top: auto;
-	vertical-align: bottom;
+	align-self: flex-end;
+	align-items: flex-end;
 }
 
 
