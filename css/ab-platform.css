@@ -43,7 +43,11 @@
 }
 
 /* Platform hero — image pinned to bottom of the row */
+.ab-hero {
+	min-height: 600px;
+}
 .ab-hero .ab-hero-inner {
+	min-height: 600px;
 	align-items: stretch;
 }
 .ab-hero .ab-hero-copy {
@@ -53,8 +57,13 @@
 }
 .ab-hero .ab-hero-visual {
 	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+.ab-hero .ab-hero-visual img {
+	display: block;
+	margin-top: auto;
 }
 
 
