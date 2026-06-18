@@ -1,0 +1,522 @@
+/* ============================================================
+   AgileBrain — Homepage Blocks
+   Depends on: ab-global.css
+   ============================================================ */
+
+/* ══════════════════════════════════════════════════════════
+   Block 01: Hero
+   ══════════════════════════════════════════════════════════ */
+
+.ab-hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 80px 0;
+}
+.ab-hero-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	gap: 48px;
+}
+.ab-hero-copy {
+	flex: 0 0 52%;
+	max-width: 52%;
+}
+.ab-hero-eyebrow {
+	display: inline-block;
+	font-size: 0.75em;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: var(--wpex-palette-8973-color);
+	background: rgba(20, 90, 159, 0.08);
+	border-radius: 4px;
+	padding: 5px 12px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+.ab-hero .hero-1 {
+	color: var(--wpex-palette-9248-color);
+	margin: 0 0 24px 0;
+}
+.ab-hero-subhead {
+	color: #555555;
+	line-height: 1.7;
+	margin: 0 0 36px 0;
+	max-width: 480px;
+}
+.ab-hero-ctas {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.ab-hero-ctas .vcex-button,
+.ab-hero-ctas .theme-button {
+	margin: 0 !important;
+}
+.ab-hero-link {
+	display: inline-block;
+	font-weight: 600;
+	color: var(--wpex-palette-8973-color);
+	text-decoration: none;
+	margin-bottom: 40px;
+	transition: opacity 0.2s;
+}
+.ab-hero-link:hover {
+	opacity: 0.75;
+	text-decoration: none;
+	color: var(--wpex-palette-8973-color);
+}
+.ab-hero-stats {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+.ab-hero-stat {
+	display: flex;
+	align-items: baseline;
+	gap: 6px;
+}
+.ab-stat-number {
+	font-weight: 700;
+	color: var(--wpex-palette-8973-color);
+}
+.ab-stat-label {
+	font-size: 0.875em;
+	color: #555555;
+}
+.ab-stat-divider {
+	width: 1px;
+	height: 20px;
+	background: #cccccc;
+}
+.ab-hero-visual {
+	flex: 0 0 44%;
+	max-width: 44%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ab-hero-visual img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 1024px) {
+	.ab-hero { padding: 60px 0; }
+	.ab-hero-copy { flex: 0 0 55%; max-width: 55%; }
+	.ab-hero-visual { flex: 0 0 42%; max-width: 42%; }
+}
+@media (max-width: 767px) {
+	.ab-hero { padding: 48px 0; }
+	.ab-hero-inner { flex-direction: column; gap: 40px; }
+	.ab-hero-copy,
+	.ab-hero-visual { flex: 0 0 100%; max-width: 100%; }
+	.ab-hero-visual { order: -1; }
+}
+@media (max-width: 480px) {
+	.ab-hero-subhead { font-size: 1em; }
+	.ab-hero-ctas { flex-direction: column; align-items: flex-start; }
+	.ab-hero-stats { gap: 16px; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 02: Most systems track behavior
+   ══════════════════════════════════════════════════════════ */
+
+.ab-behavior {
+	padding: 96px 0;
+}
+.ab-behavior-inner {
+	display: flex;
+	align-items: center;
+	gap: 64px;
+}
+.ab-behavior-copy {
+	flex: 0 0 48%;
+	max-width: 48%;
+}
+.ab-behavior-cards {
+	flex: 0 0 46%;
+	max-width: 46%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.ab-insight-card {
+	border-radius: 8px;
+	padding: 20px 24px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+	border-left: 3px solid transparent;
+	background-color: #fff;
+}
+.ab-insight-card--lapis { border-left-color: var(--wpex-palette-8973-color); }
+.ab-insight-card--seafoam { border-left-color: var(--wpex-palette-8974-color); }
+.ab-insight-card--sienna { border-left-color: #EB744E; }
+.ab-behavior-highlight { color: var(--wpex-palette-8973-color); }
+
+@media (max-width: 767px) {
+	.ab-behavior { padding: 56px 0; }
+	.ab-behavior-inner { flex-direction: column; gap: 40px; }
+	.ab-behavior-copy,
+	.ab-behavior-cards { flex: 0 0 100%; max-width: 100%; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 03: AgileBrain measures why
+   ══════════════════════════════════════════════════════════ */
+
+.ab-measures {
+	padding: 96px 0;
+}
+.ab-measures-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 56px;
+}
+.ab-measures-header {
+	text-align: center;
+	max-width: 1000px;
+}
+.ab-measures-cards {
+	display: flex;
+	align-items: stretch;
+	gap: 8px;
+	width: 100%;
+}
+.ab-measures-card {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 12px;
+	padding: 32px;
+}
+.ab-measures-card-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: auto;
+	padding-top: 24px;
+	opacity: 0.9;
+}
+.ab-measures-arrow {
+	font-size: 3.5em;
+	flex-shrink: 0;
+	padding: 0 4px;
+	align-self: center;
+	color: var(--wpex-palette-8974-color);
+}
+
+@media (max-width: 1024px) {
+	.ab-measures { padding: 72px 0; }
+}
+@media (max-width: 767px) {
+	.ab-measures { padding: 56px 0; }
+	.ab-measures-cards { flex-direction: column; gap: 16px; }
+	.ab-measures-arrow { transform: rotate(90deg); }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 04: Testimonials
+   ══════════════════════════════════════════════════════════ */
+
+.ab-testimonials {
+	padding: 96px 0;
+}
+.ab-testimonials-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+.ab-testimonials-header {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.ab-testimonials-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.ab-testimonial-card {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 24px;
+	background: var(--wpex-palette-8988-color);
+	border-radius: 12px;
+	padding: 32px;
+	background: var(--wpex-palette-9681-color);
+	box-shadow: none;
+}
+.ab-testimonial-content { flex: 1; }
+.ab-testimonial-content p { margin-bottom: 8px; }
+.ab-testimonial-logo {
+	width: 80px;
+	height: auto;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+	.ab-testimonials { padding: 56px 0; }
+	.ab-testimonials-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 05: Solutions Grid
+   ══════════════════════════════════════════════════════════ */
+
+.ab-solutions {
+	padding: 96px 0;
+}
+.ab-solutions-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	text-align: center;
+}
+.ab-solutions-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	max-width: 1000px;
+}
+.ab-solutions-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	width: 100%;
+}
+.ab-solution-card {
+	background: var(--wpex-palette-8988-color);
+	border: 1px solid rgba(20, 90, 159, 0.1);
+	border-radius: 12px;
+	padding: 40px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.ab-solution-card:hover {
+	text-decoration: none;
+}
+.ab-solution-card h3 {
+	color: var(--wpex-palette-9248-color);
+	margin: 0;
+}
+.ab-solution-card p {
+	color: #555555;
+	margin: 0;
+}
+
+@media (max-width: 1024px) {
+	.ab-solutions-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 767px) {
+	.ab-solutions { padding: 56px 0; }
+	.ab-solutions-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 06: Stats Bar
+   ══════════════════════════════════════════════════════════ */
+
+.ab-stats {
+	padding: 64px 0;
+}
+.ab-stats-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 32px;
+}
+.ab-stat-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 12px;
+}
+.ab-stats-number {
+	font-size: 3.3em;
+	font-weight: 800;
+	line-height: 1.0;
+}
+
+@media (max-width: 767px) {
+	.ab-stats-inner {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.ab-stat-item {
+		flex: 0 0 45%;
+	}
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 07: AI Powered
+   ══════════════════════════════════════════════════════════ */
+
+.ab-ai {
+	padding: 96px 0 0 0;
+}
+.ab-ai-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	text-align: center;
+}
+.ab-ai-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	max-width: 700px;
+}
+.ab-ai-illustration {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.ab-ai { padding: 56px 0 0 0; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 08: See it in real time flow
+   ══════════════════════════════════════════════════════════ */
+
+.ab-flow {
+	padding: 96px 0;
+}
+.ab-flow-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 56px;
+	text-align: center;
+}
+.ab-flow-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	max-width: 720px;
+}
+.ab-flow-steps {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	width: 100%;
+}
+.ab-flow-step {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: left;
+}
+.ab-flow-step-label {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.ab-flow-step-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 1em;
+	color: var(--wpex-palette-8988-color);
+	flex-shrink: 0;
+}
+.ab-flow-step-number--navy { background: var(--wpex-palette-9248-color); }
+.ab-flow-step-number--seafoam { background: var(--wpex-palette-8974-color); }
+.ab-flow-step-number--sienna { background: #EB744E; }
+.ab-flow-step-label h3 { margin: 0; }
+.ab-flow-step-label p { margin: 0; }
+.ab-flow-step-img {
+	width: 100%;
+	height: 360px;
+	object-fit: contain;
+	border-radius: 8px;
+}
+.ab-flow-arrow {
+	font-size: 2em;
+	color: #aaaaaa;
+	flex-shrink: 0;
+	padding: 0 8px;
+	margin-top: 12px;
+}
+
+@media (max-width: 767px) {
+	.ab-flow { padding: 56px 0; }
+	.ab-flow-steps { flex-direction: column; gap: 40px; }
+	.ab-flow-arrow { transform: rotate(90deg); align-self: center; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   Block 09: Final CTA
+   ══════════════════════════════════════════════════════════ */
+
+.ab-cta {
+	padding: 0;
+}
+.ab-cta-inner {
+	background: linear-gradient(135deg, #1e2445 0%, #145A9F 60%, #35AFA1 100%);
+	border-radius: 24px 24px 0px 0px;
+	padding: 80px 60px 0 60px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	text-align: center;
+	margin-bottom: -30px;
+}
+.ab-cta-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	max-width: 800px;
+}
+.ab-cta-mockup {
+	width: 100%;
+	max-width: 50%;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.ab-cta-inner {
+		border-radius: 16px;
+		padding: 56px 24px 0 24px;
+	}
+}
