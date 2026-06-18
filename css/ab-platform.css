@@ -213,4 +213,7 @@
 	.ab-platform-feature-copy,
 	.ab-platform-integrations-copy { flex: 0 0 100%; max-width: 100%; }
 	.ab-platform-overview-icons { justify-content: flex-start; }
+
+	/* Keep hero image below copy on mobile (overrides homepage order: -1) */
+	.ab-hero .ab-hero-visual { order: 1; }
 }
