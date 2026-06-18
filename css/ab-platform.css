@@ -43,9 +43,18 @@
 }
 
 /* Platform hero — image pinned to bottom of the row */
+.ab-hero .ab-hero-inner {
+	align-items: stretch;
+}
+.ab-hero .ab-hero-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .ab-hero .ab-hero-visual {
-	align-self: flex-end;
+	display: flex;
 	align-items: flex-end;
+	justify-content: center;
 }
 
 
