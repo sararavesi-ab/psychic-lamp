@@ -55,6 +55,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 20px;
+}
+.ab-hero .ab-hero-copy .ab-eyebrow-pill {
+	margin-bottom: 0;
 }
 .ab-hero .ab-hero-visual {
 	display: flex;
