@@ -152,6 +152,30 @@
 
 
 /* ══════════════════════════════════════════════════════════
+   Final CTA
+   ══════════════════════════════════════════════════════════ */
+
+.ab-platform-cta {
+	padding: 96px 0;
+}
+.ab-platform-cta-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.ab-platform-cta-inner h2 { margin: 0; }
+.ab-platform-cta-inner p { margin: 0; }
+
+@media (max-width: 767px) {
+	.ab-platform-cta { padding: 64px 0; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
    Responsive
    ══════════════════════════════════════════════════════════ */
 
