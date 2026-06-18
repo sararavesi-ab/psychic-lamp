@@ -11,6 +11,14 @@
 	min-height: 620px;
 	align-items: stretch;
 }
+.ab-science-hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to right, #F5F3F0 0%, rgba(245, 243, 240, 0.75) 45%, rgba(245, 243, 240, 0) 80%);
+	z-index: 0;
+	pointer-events: none;
+}
 .ab-science-hero .ab-hero-inner {
 	align-items: stretch;
 	width: 100%;
@@ -150,6 +158,20 @@
 	width: 100%;
 	max-width: 420px;
 	height: auto;
+}
+.ab-science-framework-video {
+	margin-top: 24px;
+	width: 100%;
+	border-radius: 12px;
+	overflow: hidden;
+	aspect-ratio: 16/9;
+	background: var(--wpex-palette-9681-color);
+	box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.ab-science-framework-video iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
 
@@ -343,6 +365,13 @@
 .ab-science-theory-quote-text em {
 	color: var(--wpex-palette-8974-color);
 	font-style: normal;
+}
+.ab-science-theory-attribution {
+	font-family: 'Manrope', sans-serif;
+	font-size: 0.9em;
+	font-style: italic;
+	color: var(--wpex-palette-8973-color);
+	margin: -8px 0 0 0;
 }
 .ab-science-theory-intro p {
 	font-family: 'Manrope', sans-serif;
