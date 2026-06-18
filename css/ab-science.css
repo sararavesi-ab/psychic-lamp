@@ -11,13 +11,20 @@
 	min-height: 620px;
 	align-items: stretch;
 }
-.ab-science-hero::before {
+.science-hero-row {
+	position: relative;
+}
+.science-hero-row::before {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(to right, #F5F3F0 0%, rgba(245, 243, 240, 0.75) 45%, rgba(245, 243, 240, 0) 80%);
-	z-index: 0;
+	background: linear-gradient(to right, rgba(245, 243, 240, 0.9) 0%, rgba(245, 243, 240, 0.6) 45%, rgba(245, 243, 240, 0) 80%);
+	z-index: 1;
 	pointer-events: none;
+}
+.science-hero-row .ab-hero-inner {
+	position: relative;
+	z-index: 2;
 }
 .ab-science-hero .ab-hero-inner {
 	width: 100%;
