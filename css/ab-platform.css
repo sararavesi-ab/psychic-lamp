@@ -45,10 +45,11 @@
 /* Platform hero — image pinned to bottom of the row */
 .ab-hero {
 	min-height: 600px;
+	align-items: stretch;
 }
 .ab-hero .ab-hero-inner {
-	min-height: 600px;
 	align-items: stretch;
+	width: 100%;
 }
 .ab-hero .ab-hero-copy {
 	display: flex;
@@ -63,7 +64,6 @@
 }
 .ab-hero .ab-hero-visual img {
 	display: block;
-	margin-top: auto;
 }
 
 
@@ -214,6 +214,6 @@
 	.ab-platform-integrations-copy { flex: 0 0 100%; max-width: 100%; }
 	.ab-platform-overview-icons { justify-content: flex-start; }
 
-	/* Keep hero image below copy on mobile (overrides homepage order: -1) */
-	.ab-hero .ab-hero-visual { order: 1; }
+	/* Keep hero image below copy on mobile (overrides global order: -1) */
+	.ab-hero .ab-hero-visual { order: 1 !important; }
 }
