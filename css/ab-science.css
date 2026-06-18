@@ -20,25 +20,21 @@
 	pointer-events: none;
 }
 .ab-science-hero .ab-hero-inner {
-	align-items: stretch;
 	width: 100%;
 }
 .ab-science-hero .ab-hero-copy {
+	flex: 0 0 60%;
+	max-width: 60%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	gap: 20px;
 }
-.ab-science-hero .ab-hero-visual {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}
-.ab-science-hero .ab-hero-visual img {
-	max-height: 520px;
-	width: auto;
-	display: block;
+
+@media (max-width: 767px) {
+	.ab-science-hero .ab-hero-copy {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
 
 
@@ -447,7 +443,7 @@
 	.ab-science-scientists-grid  { grid-template-columns: 1fr; gap: 48px; }
 	.ab-science-quote-text       { font-size: 1.9em; }
 	.ab-science-theory-quote-text{ font-size: 1.75em; }
-	.ab-science-hero .ab-hero-visual img { max-height: 380px; }
+
 }
 
 @media (max-width: 480px) {
