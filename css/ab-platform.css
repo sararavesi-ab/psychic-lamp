@@ -155,6 +155,11 @@
    Final CTA
    ══════════════════════════════════════════════════════════ */
 
+/* Override homepage ab-cta-inner which has padding-bottom: 0 for the mockup bleed */
+.ab-cta .ab-cta-inner {
+	padding-bottom: 60px;
+}
+
 .ab-platform-cta {
 	padding: 96px 0;
 }
