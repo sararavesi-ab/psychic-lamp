@@ -22,7 +22,7 @@
 	right: 0 !important;
 	bottom: 0 !important;
 	background: linear-gradient(to right, rgba(245, 243, 240, 0.92) 0%, rgba(245, 243, 240, 0.6) 45%, rgba(245, 243, 240, 0) 80%) !important;
-	z-index: 10 !important;
+	z-index: 0 !important;
 	pointer-events: none !important;
 	display: block !important;
 }
