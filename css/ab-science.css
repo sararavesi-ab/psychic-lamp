@@ -11,10 +11,10 @@
 	min-height: 620px;
 	align-items: stretch;
 }
-/* Apply mask directly to the video — no z-index battles needed.
-   Set the WPBakery row background colour to #F5F3F0 (linen)
-   so the masked-out area shows linen underneath. */
-.science-hero-row video {
+/* Mask the Total theme video bg element directly.
+   Set WPBakery row background colour to #F5F3F0 (linen)
+   so the faded-out left side shows linen underneath. */
+.wpex-video-bg {
 	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 80%);
 	mask-image:         linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 80%);
 }
