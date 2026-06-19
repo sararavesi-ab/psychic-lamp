@@ -11,12 +11,18 @@
 	min-height: 620px;
 	align-items: stretch;
 }
-/* Mask the Total theme video bg element directly.
-   Set WPBakery row background colour to #F5F3F0 (linen)
-   so the faded-out left side shows linen underneath. */
-.wpex-video-bg {
-	-webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 80%);
-	mask-image:         linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 80%);
+/* Gradient overlay div — sits inside the column content layer
+   which is already above the WPBakery video background. */
+.science-hero-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to right, rgba(245, 243, 240, 0.92) 0%, rgba(245, 243, 240, 0.55) 45%, rgba(245, 243, 240, 0) 80%);
+	pointer-events: none;
+	z-index: 0;
+}
+.ab-science-hero .ab-hero-inner {
+	position: relative;
+	z-index: 1;
 }
 .ab-science-hero .ab-hero-inner {
 	width: 100%;
