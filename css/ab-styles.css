@@ -883,10 +883,10 @@ li { margin-top: 10px; margin-bottom: 10px; }
 .ab-card--accent,
 .ab-integration-card {
 	border: none;
-	border-left: 3px solid var(--wpex-palette-8974-color);
+	border-left: 3px solid #35AFA1;
 	border-radius: 8px;
 	padding: 24px 28px;
-	background: var(--wpex-palette-8988-color);
+	background: #ffffff;
 	box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .ab-card--accent h3, .ab-integration-card h3 { margin: 0 0 8px 0; }
