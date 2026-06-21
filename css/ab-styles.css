@@ -880,7 +880,8 @@ li { margin-top: 10px; margin-bottom: 10px; }
 }
 
 /* Accent card (integrations — left border) */
-.ab-card--accent {
+.ab-card--accent,
+.ab-integration-card {
 	border: none;
 	border-left: 3px solid var(--wpex-palette-8974-color);
 	border-radius: 8px;
@@ -888,8 +889,8 @@ li { margin-top: 10px; margin-bottom: 10px; }
 	background: var(--wpex-palette-8988-color);
 	box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
-.ab-card--accent h3 { margin: 0 0 8px 0; }
-.ab-card--accent p  { margin: 0; color: #555; }
+.ab-card--accent h3, .ab-integration-card h3 { margin: 0 0 8px 0; }
+.ab-card--accent p,  .ab-integration-card p  { margin: 0; color: #555; }
 
 /* Image card */
 .ab-card--image {
