@@ -395,8 +395,22 @@ table.tablepress thead th {
    8. THEME & PLUGIN OVERRIDES
    ══════════════════════════════════════════════════════════ */
 
-.vc_row { padding-top: 12px; padding-bottom: 12px; }
-.vc_section { padding-top: 0px; padding-bottom: 40px; }
+.vc_row { padding-top: 0; padding-bottom: 0; }
+.vc_section { padding-top: 0; padding-bottom: 0; }
+.vc_column-inner {
+	padding-top: 96px !important;
+	padding-bottom: 96px !important;
+}
+.ab-no-col-pad .vc_column-inner {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+@media (max-width: 1024px) {
+	.vc_column-inner { padding-top: 72px !important; padding-bottom: 72px !important; }
+}
+@media (max-width: 767px) {
+	.vc_column-inner { padding-top: 56px !important; padding-bottom: 56px !important; }
+}
 .wpex-slider-thumbnails { visibility: hidden; }
 .sp-nc-thumbnails-container { visibility: hidden; margin-bottom: -60px; }
 .menu-button { margin-left: 30px; }
@@ -652,11 +666,7 @@ li { margin-top: 10px; margin-bottom: 10px; }
    12. SECTION — shared page-section padding
    ══════════════════════════════════════════════════════════ */
 
-.ab-section {
-	padding: 96px 0;
-}
-@media (max-width: 1024px) { .ab-section { padding: 72px 0; } }
-@media (max-width: 767px)  { .ab-section { padding: 56px 0; } }
+/* .ab-section — structural class only, padding lives on .vc_column-inner */
 
 
 /* ══════════════════════════════════════════════════════════
