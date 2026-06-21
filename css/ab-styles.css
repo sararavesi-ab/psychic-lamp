@@ -327,6 +327,11 @@
 	color: var(--wpex-palette-8988-color);
 	border-color: rgba(255, 255, 255, 0.4);
 }
+.ab-eyebrow-pill--center {
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /* ══════════════════════════════════════════════════════════
